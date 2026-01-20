@@ -1,0 +1,144 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.3">
+  <diagram name="第 1 页" id="Jf2p-8mydyNEYxLKWRME">
+    <mxGraphModel dx="1678" dy="874" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-36" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontFamily=微软雅黑;fontSize=14;fontStyle=1" value="UpdateReportStatus&#xa;读取限位开关状态并更新状态  上报" vertex="1">
+          <mxGeometry height="102" width="260" x="248.5" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-38" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=微软雅黑;fontSize=14;fontStyle=1" value="检查命令队列&#xa;是否有控制指令" vertex="1">
+          <mxGeometry height="174" width="174" x="291" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-40" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontFamily=微软雅黑;fontSize=14;fontStyle=1" value="ExecuteCommand&#xa;执行启动序列 或 单轴控制" vertex="1">
+          <mxGeometry height="78" width="246" x="210" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-66" edge="1" parent="1" source="Zmuf19S-3rHIr6pURiY6-36" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=微软雅黑;fontSize=14;fontStyle=1" target="Zmuf19S-3rHIr6pURiY6-38" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="390" y="760" as="sourcePoint" />
+            <mxPoint x="490" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-68" edge="1" parent="1" source="Zmuf19S-3rHIr6pURiY6-38" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=微软雅黑;fontSize=14;fontStyle=1" target="Zmuf19S-3rHIr6pURiY6-40" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="930" as="sourcePoint" />
+            <mxPoint x="400" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-69" connectable="0" parent="Zmuf19S-3rHIr6pURiY6-68" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;fontFamily=微软雅黑;fontSize=14;fontStyle=1" value="有指令" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-70" edge="1" parent="1" source="Zmuf19S-3rHIr6pURiY6-38" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.95;entryY=0.625;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=微软雅黑;fontSize=14;fontStyle=1" target="Zmuf19S-3rHIr6pURiY6-90" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="901" />
+              <mxPoint x="590" y="560" />
+            </Array>
+            <mxPoint x="435" y="900" as="sourcePoint" />
+            <mxPoint x="460" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-71" connectable="0" parent="Zmuf19S-3rHIr6pURiY6-70" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;fontFamily=微软雅黑;fontSize=14;fontStyle=1" value="无指令" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="36" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-72" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=微软雅黑;fontSize=14;fontStyle=1" value="状态机切换为&lt;br&gt;LOCKING_X" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="1169" as="geometry" />
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-73" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=微软雅黑;fontSize=14;fontStyle=1" value="状态机切换为&lt;br&gt;UNLOCKING_Z" vertex="1">
+          <mxGeometry height="60" width="120" x="239" y="1169" as="geometry" />
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-74" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=微软雅黑;fontSize=14;fontStyle=1" value="控制单轴电机&lt;br&gt;打开 / 关闭" vertex="1">
+          <mxGeometry height="60" width="120" x="412" y="1169" as="geometry" />
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-75" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=微软雅黑;fontSize=14;fontStyle=1" value="控制舵机&lt;br&gt;长按 / 短按" vertex="1">
+          <mxGeometry height="60" width="120" x="590" y="1169" as="geometry" />
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-76" edge="1" parent="1" source="Zmuf19S-3rHIr6pURiY6-40" style="endArrow=classic;html=1;rounded=0;exitX=0.136;exitY=1.004;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=微软雅黑;fontSize=14;fontStyle=1" target="Zmuf19S-3rHIr6pURiY6-72" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="1060" as="sourcePoint" />
+            <mxPoint x="790" y="1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-77" connectable="0" parent="Zmuf19S-3rHIr6pURiY6-76" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;fontFamily=微软雅黑;fontSize=14;fontStyle=1" value="关闭停机坪&lt;br&gt;LOCK_UAV" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-78" edge="1" parent="1" source="Zmuf19S-3rHIr6pURiY6-40" style="endArrow=classic;html=1;rounded=0;exitX=0.949;exitY=0.993;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.417;entryY=0.017;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=微软雅黑;fontSize=14;fontStyle=1" target="Zmuf19S-3rHIr6pURiY6-75" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="733" y="1040" as="sourcePoint" />
+            <mxPoint x="630" y="1111" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-79" connectable="0" parent="Zmuf19S-3rHIr6pURiY6-78" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;fontFamily=微软雅黑;fontSize=14;fontStyle=1" value="控制充电器" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-82" edge="1" parent="1" source="Zmuf19S-3rHIr6pURiY6-40" style="endArrow=classic;html=1;rounded=0;exitX=0.589;exitY=0.971;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.407;entryY=-0.004;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=微软雅黑;fontSize=14;fontStyle=1" target="Zmuf19S-3rHIr6pURiY6-74" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="683" y="1030" as="sourcePoint" />
+            <mxPoint x="580" y="1101" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-83" connectable="0" parent="Zmuf19S-3rHIr6pURiY6-82" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;fontFamily=微软雅黑;fontSize=14;fontStyle=1" value="控制单轴" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-84" edge="1" parent="1" source="Zmuf19S-3rHIr6pURiY6-40" style="endArrow=classic;html=1;rounded=0;entryX=0.559;entryY=0.011;entryDx=0;entryDy=0;exitX=0.359;exitY=0.982;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;fontFamily=微软雅黑;fontSize=14;fontStyle=1" target="Zmuf19S-3rHIr6pURiY6-73" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="291" y="1120" as="sourcePoint" />
+            <mxPoint x="291" y="1169" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-85" connectable="0" parent="Zmuf19S-3rHIr6pURiY6-84" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;fontFamily=微软雅黑;fontSize=14;fontStyle=1" value="打开停机坪&lt;br&gt;UNLIOCK_UAV" vertex="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-86" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontFamily=微软雅黑;fontSize=14;fontStyle=1" value="执行状态机" vertex="1">
+          <mxGeometry height="60" width="120" x="150" y="1270" as="geometry" />
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-87" edge="1" parent="1" source="Zmuf19S-3rHIr6pURiY6-72" style="endArrow=classic;html=1;rounded=0;exitX=0.317;exitY=0.967;exitDx=0;exitDy=0;exitPerimeter=0;fontFamily=微软雅黑;fontSize=14;fontStyle=1" target="Zmuf19S-3rHIr6pURiY6-86" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="60" y="1350" as="sourcePoint" />
+            <mxPoint x="110" y="1300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-88" edge="1" parent="1" source="Zmuf19S-3rHIr6pURiY6-73" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.625;entryY=0.017;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=微软雅黑;fontSize=14;fontStyle=1" target="Zmuf19S-3rHIr6pURiY6-86" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="120" y="1430" as="sourcePoint" />
+            <mxPoint x="170" y="1380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-89" edge="1" parent="1" source="Zmuf19S-3rHIr6pURiY6-86" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.05;entryY=0.588;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=微软雅黑;fontSize=14;fontStyle=1" target="Zmuf19S-3rHIr6pURiY6-90" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="1300" />
+              <mxPoint x="60" y="560" />
+            </Array>
+            <mxPoint x="70" y="1060" as="sourcePoint" />
+            <mxPoint x="124" y="1103" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-90" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;fontFamily=微软雅黑;fontSize=14;fontStyle=1" value="循环" vertex="1">
+          <mxGeometry height="80" width="80" x="334" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-91" edge="1" parent="1" source="Zmuf19S-3rHIr6pURiY6-74" style="endArrow=classic;html=1;rounded=0;exitX=0.858;exitY=0.033;exitDx=0;exitDy=0;fontStyle=1;entryX=0.938;entryY=0.738;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;fontFamily=微软雅黑;fontSize=14;" target="Zmuf19S-3rHIr6pURiY6-90" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="570" />
+            </Array>
+            <mxPoint x="530" y="980" as="sourcePoint" />
+            <mxPoint x="584" y="1023" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zmuf19S-3rHIr6pURiY6-92" edge="1" parent="1" source="Zmuf19S-3rHIr6pURiY6-75" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;fontFamily=微软雅黑;fontSize=14;fontStyle=1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="550" />
+            </Array>
+            <mxPoint x="600" y="970" as="sourcePoint" />
+            <mxPoint x="410" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
