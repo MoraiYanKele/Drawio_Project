@@ -1,0 +1,143 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.3">
+  <diagram name="第 1 页" id="s1fplIa89jsTA63B9EVE">
+    <mxGraphModel dx="2253" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-1" parent="1" style="ellipse;fillColor=strokeColor;fontFamily=微软雅黑;fontStyle=1;fontSize=14;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="314" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-2" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#cce5ff;strokeColor=#36393d;fontFamily=微软雅黑;fontStyle=1;fontSize=14;" value="IDLE" vertex="1">
+          <mxGeometry height="40" width="47" x="298" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-3" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#cce5ff;strokeColor=#36393d;fontFamily=微软雅黑;fontStyle=1;fontSize=14;" value="LOCKING_X" vertex="1">
+          <mxGeometry height="40" width="96" x="615" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-4" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;startSize=25;container=0;collapsible=0;rounded=1;arcSize=14;dropTarget=0;fillColor=#ffcc99;strokeColor=#36393d;fontFamily=微软雅黑;fontSize=14;" value="锁定流程" vertex="1">
+          <mxGeometry height="440" width="369" x="440" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-5" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#cce5ff;strokeColor=#36393d;fontFamily=微软雅黑;fontStyle=1;fontSize=14;" value="LOCKING_Y" vertex="1">
+          <mxGeometry height="40" width="97" x="501" y="369" as="geometry" />
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-6" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#cce5ff;strokeColor=#36393d;fontFamily=微软雅黑;fontStyle=1;fontSize=14;" value="LOCKING_Z" vertex="1">
+          <mxGeometry height="40" width="96" x="501" y="487" as="geometry" />
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-7" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#cce5ff;strokeColor=#36393d;fontFamily=微软雅黑;fontStyle=1;fontSize=14;" value="LOCKED" vertex="1">
+          <mxGeometry height="40" width="72" x="513" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-8" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fontFamily=微软雅黑;fontStyle=1;fontSize=14;fillColor=#cce5ff;strokeColor=#36393d;" value="UNLOCKING_Z" vertex="1">
+          <mxGeometry height="40" width="117" x="205" y="259" as="geometry" />
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-9" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;startSize=25;container=0;collapsible=0;rounded=1;arcSize=14;dropTarget=0;fontFamily=微软雅黑;fontSize=14;fillColor=#ffcc99;strokeColor=#36393d;" value="解锁流程" vertex="1">
+          <mxGeometry height="432" width="429" x="-24" y="234" as="geometry" />
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-10" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fontFamily=微软雅黑;fontStyle=1;fontSize=14;fillColor=#cce5ff;strokeColor=#36393d;" value="UNLOCKING_Y" vertex="1">
+          <mxGeometry height="40" width="117" x="83" y="373" as="geometry" />
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-11" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fontFamily=微软雅黑;fontStyle=1;fontSize=14;fillColor=#cce5ff;strokeColor=#36393d;" value="UNLOCKING_X" vertex="1">
+          <mxGeometry height="40" width="117" x="83" y="487" as="geometry" />
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-12" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fontFamily=微软雅黑;fontStyle=1;fontSize=14;fillColor=#cce5ff;strokeColor=#36393d;" value="UNLOCKED" vertex="1">
+          <mxGeometry height="40" width="93" x="11" y="601" as="geometry" />
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-13" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fontFamily=微软雅黑;fontStyle=1;fontSize=14;fillColor=#cce5ff;strokeColor=#36393d;" value="ERROR" vertex="1">
+          <mxGeometry height="40" width="63" x="382" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-14" edge="1" parent="1" source="TlVV2vM3eVbNX7NuDCOh-1" style="curved=1;startArrow=none;;exitX=0.51;exitY=1;entryX=0.49;entryY=0;rounded=0;fontFamily=微软雅黑;fontStyle=1;fontSize=14;" target="TlVV2vM3eVbNX7NuDCOh-2" value="上电初始化">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-15" edge="1" parent="1" source="TlVV2vM3eVbNX7NuDCOh-2" style="curved=1;startArrow=none;;exitX=1;exitY=1;entryX=0.5;entryY=0;rounded=0;fontFamily=微软雅黑;fontStyle=1;fontSize=14;exitDx=0;exitDy=0;" target="TlVV2vM3eVbNX7NuDCOh-3" value="收到 LOCK_UAV 指令">
+          <mxGeometry relative="1" x="-0.3787" y="11" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="480" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-16" edge="1" parent="1" source="TlVV2vM3eVbNX7NuDCOh-3" style="curved=1;startArrow=none;;exitX=0.09;exitY=1;entryX=0.5;entryY=0;rounded=0;fontFamily=微软雅黑;fontStyle=1;fontSize=14;" target="TlVV2vM3eVbNX7NuDCOh-5" value="X轴触碰限位 (关闭/夹紧)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="549" y="332" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-17" edge="1" parent="1" source="TlVV2vM3eVbNX7NuDCOh-5" style="curved=1;startArrow=none;;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontFamily=微软雅黑;fontStyle=1;fontSize=14;" target="TlVV2vM3eVbNX7NuDCOh-6" value="Y轴触碰限位 (关闭/夹紧)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-18" edge="1" parent="1" source="TlVV2vM3eVbNX7NuDCOh-6" style="curved=1;startArrow=none;;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontFamily=微软雅黑;fontStyle=1;fontSize=14;" target="TlVV2vM3eVbNX7NuDCOh-7" value="Z轴关闭">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-19" edge="1" parent="1" source="TlVV2vM3eVbNX7NuDCOh-2" style="curved=1;startArrow=none;;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontFamily=微软雅黑;fontStyle=1;fontSize=14;exitDx=0;exitDy=0;" target="TlVV2vM3eVbNX7NuDCOh-8" value="收到 UNLOCK_UAV 指令">
+          <mxGeometry relative="1" x="0.1857" y="-31" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="260" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-20" edge="1" parent="1" source="TlVV2vM3eVbNX7NuDCOh-8" style="curved=1;startArrow=none;;exitX=0.13;exitY=1;entryX=0.5;entryY=0;rounded=0;fontFamily=微软雅黑;fontStyle=1;fontSize=14;" target="TlVV2vM3eVbNX7NuDCOh-10" value="Z轴完全打开 (限位开启)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="142" y="336" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-21" edge="1" parent="1" source="TlVV2vM3eVbNX7NuDCOh-10" style="curved=1;startArrow=none;;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;fontFamily=微软雅黑;fontStyle=1;fontSize=14;" target="TlVV2vM3eVbNX7NuDCOh-11" value="Y轴完全打开 (限位开启)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-22" edge="1" parent="1" source="TlVV2vM3eVbNX7NuDCOh-11" style="curved=1;startArrow=none;;exitX=0.5;exitY=1;entryX=0.82;entryY=0;rounded=0;fontFamily=微软雅黑;fontStyle=1;fontSize=14;" target="TlVV2vM3eVbNX7NuDCOh-12" value="X轴完全打开 (限位开启)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="142" y="564" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-25" edge="1" parent="1" source="TlVV2vM3eVbNX7NuDCOh-4" style="curved=1;startArrow=none;;rounded=0;fontFamily=微软雅黑;fontStyle=1;fontSize=14;" target="TlVV2vM3eVbNX7NuDCOh-13" value="30秒超时">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-28" edge="1" parent="1" source="TlVV2vM3eVbNX7NuDCOh-12" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="TlVV2vM3eVbNX7NuDCOh-2" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="50" y="190" />
+              <mxPoint x="180" y="150" />
+            </Array>
+            <mxPoint x="170" y="460" as="sourcePoint" />
+            <mxPoint x="270" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-29" connectable="0" parent="TlVV2vM3eVbNX7NuDCOh-28" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;fontSize=15;fontFamily=微软雅黑;" value="自动流转" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="10" y="-76" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-30" edge="1" parent="1" source="TlVV2vM3eVbNX7NuDCOh-9" style="curved=1;startArrow=none;;rounded=0;fontFamily=微软雅黑;fontStyle=1;fontSize=14;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" target="TlVV2vM3eVbNX7NuDCOh-13" value="30秒超时">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="310" y="660" as="sourcePoint" />
+            <mxPoint x="250" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TlVV2vM3eVbNX7NuDCOh-33" edge="1" parent="1" source="TlVV2vM3eVbNX7NuDCOh-7" style="curved=1;startArrow=none;;exitX=1;exitY=1;entryX=1;entryY=0.5;rounded=0;fontFamily=微软雅黑;fontStyle=1;fontSize=14;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" target="TlVV2vM3eVbNX7NuDCOh-2" value="收到 LOCK_UAV 指令">
+          <mxGeometry relative="1" x="0.493" y="76" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1030" y="100" />
+            </Array>
+            <mxPoint x="680" y="580" as="sourcePoint" />
+            <mxPoint x="998" y="702" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
